@@ -1,0 +1,554 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: poppins;
+    overflow-x: hidden;
+}
+
+.popup{
+    width: 20%;
+    height: 100%;
+    background-color: aquamarine;
+    position: fixed;
+    right: -1500px;
+    transition: 0.5s ease-in-out;
+    z-index: 99999;
+}
+
+.popup a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.popup h1 i{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: #171614;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    background-color: #171614;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    row-gap: 50px;
+}
+
+.shown{
+    right: 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.navbar {
+    height: 10vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar i{
+    font-size: 30px;
+}
+
+.banner {
+    background-color: black;
+    width: 100%;
+    height: 70vh;
+    background-image: url();
+    color: #fff;
+    background: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner h1 {
+    padding-top: 230px;
+    margin-left: 150px;
+    font-size: 80px;
+}
+
+.banner .btn {
+    margin-top: 100px;
+    margin-left: 150px;
+    padding: 15px 20px;
+    background-color: black;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 999px;
+}
+
+.banner h1 span {
+    color: black;
+}
+
+.centered {
+    margin: auto;
+    width: 90%;
+}
+
+.text {
+    margin-left: 750px;
+    width: 330px;
+    margin-top: -115px;
+    color: black;
+    line-height: 2;
+    font-weight: 500;
+    text-align: left;
+}
+
+.bg-about {
+    background-color: #171614;
+    height: fit-content;
+    width: 100%;
+    margin-top: 600px;
+}
+
+.bg-services {
+    background-color: #171614;
+    height: fit-content;
+    width: 100%;
+}
+
+.about {
+    color: #fff;
+    height: 100vh;
+    padding: 150px 0px;
+    display: flex;
+}
+
+.service {
+    color: #fff;
+    height: 100vh;
+    padding: 150px 0px;
+    display: flex;
+}
+
+.about p {
+    font-size: 15px;
+}
+
+.about .letter {
+    letter-spacing: 20px;
+}
+
+.tit{
+    font-size: 50px !important;
+}
+
+.letter2 {
+    letter-spacing: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    padding: 20px 0;
+    width: 190px;
+}
+
+.service .letter {
+    letter-spacing: 20px;
+}
+
+.text-about {
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.left {
+    width: 50%;
+}
+
+.left1 {}
+
+.left1 img {
+    width: 100%;
+    height: 110vh;
+    object-fit: cover;
+}
+
+.left h1 {
+    font-size: 50px;
+}
+
+.right {
+    padding: 0 0;
+    width: 50%;
+    display: flex;
+}
+p{
+    
+}
+.right1 {
+    width: 50%;
+    margin-left: 130px;
+}
+
+.right1 h1 {
+    font-size: 50px;
+}
+
+.right img {
+    margin-left: 70px;
+    width: 80%;
+    height: 110vh;
+    object-fit: cover;
+}
+
+/* .skill {
+    width: 70%;
+    gap: 15px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+
+.skill-item {
+    padding: 5px 20px;
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 999px;
+} */
+
+.bg-skill{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+.service-info {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.service-icon {
+    color: white;
+    width: 30px;
+    align-items: center;
+}
+
+.bg-project {
+    margin-top: 200px;
+
+}
+
+.project {
+    padding: 30px 0;
+    display: flex;
+}
+
+.kiri {
+    width: 30%;
+    height: 100vh;
+}
+
+.kanan {
+    display: flex;
+    width: 70%;
+    height: 100vh;
+}
+
+.full{
+    width: 50%;
+    background-color: purple;
+}
+
+.half{
+    margin-left: 60px;
+    width: 40%;
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.content{
+    background-color: blue;
+    width: 100%;
+    height: 30%;
+}
+
+.bg-footer{
+    background-color: #171614;
+    margin-top: 150px;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    padding: 50px 0;
+}
+
+.btn2 {
+    color: #fff;
+    margin-top: 50px;
+    padding: 15px 20px;
+    background-color: black;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 999px;
+}
+
+.tengah{
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tengah h1{
+    font-size: 40px;
+    color: white;
+}
+
+.tengah a{
+    color: white;
+}
+
+.kanan-atas{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    top: 30px;
+}
+
+.kanan-atas span{
+    font-size: 15px;
+    color: white;
+    text-align: left;
+}
+
+.kanan-atas a{ 
+    color: white;
+    font-size: 20px;
+}
+
+.kiri-atas{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.kiri-atas h2{
+    color: white;
+    font-size: 20px;
+}
+
+.kiri-bawah{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: auto;
+}
+
+.kanan-bawah{
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    color: rgba(255, 255, 255, 0.555);
+    font-size: large;
+    column-gap: 20px;
+}
+
+#active{
+    color: white;
+    font-weight: 600;
+}
+.bg-project .kanan .full, .content{
+    overflow: hidden;
+}
+
+.bg-project .kanan .full img, .content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-line{
+    margin-left: 50px;
+    margin-top: 70px;
+    height: fit-content;
+    width: 30px;
+    position: relative;
+}
+
+.edu{
+    width: 300px;
+    position: absolute;
+    left: 30px;
+    top: -2px;
+}
+
+.ver{
+    bottom: -41px;
+    left: -100px;
+    position: absolute;
+}
+
+.ver-tit{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: fit-content;
+    line-height: 35px;
+}
+
+.ver-tit h3{
+    color: #fff;
+}
+
+.edu2{
+    width: 300px;
+    position: absolute;
+    left: 30px;
+    top: 115px;
+}
+
+.edu3{
+    width: 300px;
+    position: absolute;
+    left: 30px;
+    top: 240px;
+}
+
+.line{
+    width: 2px;
+    background-color: #fff;
+    height: 250px;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    background-color: #fff;
+    position: absolute;
+    left: -9px;
+}
+.circle2{
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    background-color: #fff;
+    position: absolute;
+    top: 250px;
+    left: -9px;
+}
+.circle3{
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    background-color: #fff;
+    position: absolute;
+    top: 125px;
+    left: -9px;
+}
+
+.skill{
+    display: flex;
+    width: 80%;
+    height: 200px;
+}
+
+.skill-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.skill-card span{
+    font-weight: bold;
+}
+
+
+.skill-card img{
+    color: black; 
+    width: 50px;
+    height: 50px;   
+}
+
